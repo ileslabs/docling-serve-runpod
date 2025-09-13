@@ -222,6 +222,25 @@ def create_app():  # noqa: C901
             name="static",
         )
 
+        
+
+        @app.get("/")
+        async def root():
+            return {"ok": True, "status": "running", "service": "docling"}
+
+        
+        
+        @app.get("/ping")
+        async def ping():
+            return {"ping": "pong"}
+        
+        # Alternative health check endpoint
+        @app.get("/healthz")
+        async def healthz():
+            return {"status": "ok"}
+
+
+
         @app.get("/swagger", include_in_schema=False)
         async def custom_swagger_ui_html():
             return get_swagger_ui_html(
