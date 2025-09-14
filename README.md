@@ -18,7 +18,7 @@ Running [Docling](https://github.com/docling-project/docling) as an API service.
 > [!NOTE]
 > **Migration to the `v1` API.** Docling Serve now has a stable v1 API. Read more on the [migration to v1](./docs/v1_migration.md).
 
-## Getting started
+## Getting started 
 
 Install the `docling-serve` package and run the server.
 
