@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------
-# Docling Serve - CUDA 12.8 Containerfile
+# Docling Serve - CUDA 12.8 Containerfile.
 # Builds a GPU-enabled image for Docling with local code modifications
 # -------------------------------------------------------------------
 
